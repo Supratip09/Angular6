@@ -1,0 +1,25 @@
+<a routerLink = "">Back</a>
+<!-- Card -->
+<div class="card mx-xl-5">
+
+    <!-- Card body -->
+    <div class="card-body">
+<form name="formNewProduct" #productData="ngForm" (ngSubmit)="addNewProduct(productData.value);">
+  <p class="h4 text-center mb-4">Add Product</p>
+
+  <!-- Material input email -->
+  <div class="md-form">
+      <input type="text" name="name" placeholder="Name" class="form-control" ngModel>
+  </div>
+
+  <!-- Material input password -->
+  <div class="md-form">
+      <input type="text" name="color" placeholder="Color" class="form-control" ngModel>
+  </div>
+
+  <div class="text-center mt-4">
+      <input class="btn btn-default" type="submit" value="Add Product">
+  </div>
+</form>
+</div>
+</div>
